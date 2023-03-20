@@ -7,12 +7,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static jm.task.core.jdbc.util.Util.PASSWORD;
-import static jm.task.core.jdbc.util.Util.USERNAME;
-import static org.hibernate.cfg.AvailableSettings.URL;
-
 public class UserDaoJDBCImpl implements UserDao {
     private static final Connection con = Util.getConnection();
+
 
 
     public UserDaoJDBCImpl() throws SQLException {
